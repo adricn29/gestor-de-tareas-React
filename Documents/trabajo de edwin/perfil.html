@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Josue Oran Proyect - Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* Estilos generales para la página */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    nav {
+        background-color: #0a2956;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilos para la sección de perfil */
+    #perfil {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #perfil h2 {
+        color: #1e4ba4;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #registro-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #registro-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    #registro-form input[type="text"],
+    #registro-form input[type="email"],
+    #registro-form input[type="file"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #registro-form button {
+        padding: 10px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    #registro-form button:hover {
+        background-color: #c0392b;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div id="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Sección de Perfil -->
+    <section id="perfil">
+        <h2>Registro de Usuario</h2>
+        <form id="registro-form">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required><br>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: BMWRomaElitesproyect@gmail.com</p>
+                <p>Teléfono: (809) 333-5555</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BMWRomaElitesproyect. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
